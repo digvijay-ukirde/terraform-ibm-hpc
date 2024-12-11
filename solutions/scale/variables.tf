@@ -421,7 +421,7 @@ variable "dns_domain_names" {
 ##############################################################################
 variable "key_management" {
   type        = string
-  default     = "key_protect"
+  default     = null
   description = "null/key_protect/hs_crypto"
 }
 
@@ -436,7 +436,7 @@ variable "hpcs_instance_name" {
 ##############################################################################
 variable "enable_cos_integration" {
   type        = bool
-  default     = true
+  default     = false
   description = "Integrate COS with HPC solution"
 }
 
@@ -448,13 +448,13 @@ variable "cos_instance_name" {
 
 variable "enable_atracker" {
   type        = bool
-  default     = true
+  default     = false
   description = "Enable Activity tracker"
 }
 
 variable "enable_vpc_flow_logs" {
   type        = bool
-  default     = true
+  default     = false
   description = "Enable Activity tracker"
 }
 
